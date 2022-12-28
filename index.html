@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,35 @@
     <title>Text | Cleffon</title>
     <link rel="stylesheet" href="/style/style.css">
     <!---Boostratp Start--->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <!---Boostratp End--->
 
     <!---Gilroy Font Start--->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
     <!---Gilroy Font End--->
 
+    <!---Swiper Js Start--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!---Swiper Js End--->
+
+
 </head>
+
 <body>
     <div id="header-wrap">
         <header>
             <div class="container-fluid" id="header">
                 <div class="row">
                     <div class="col-6 logo-wrap">
-                        <h1 class="logo">Text Editor</h1>
+                        <h1 class="logo">Text <span>Editor</span></h1>
                     </div>
-                    <div class="col-6 menu-wrap" >
+                    <div class="col-6 menu-wrap">
                         <div class="menu-links"></div>
                     </div>
                 </div>
@@ -34,6 +46,14 @@
 
 
     <div id="page-wrap">
+        <div class="container-fluid hero-texts">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Text Casing <span>Reinforced</span></h1>
+                    <p>Choose the case you want to convert your text to and enter your text. </p>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid editor-row">
             <div class="row">
                 <div class="col-12">
@@ -49,10 +69,31 @@
                     </div>
                 </div>
             </div>
+            <div class="row case-controls-row">
+                <div class="col-9">
+                    <div class="case-menu">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><button>Sentence case</button></div>
+                                <div class="swiper-slide"><button>lower case</button></div>
+                                <div class="swiper-slide"><button>UPPER CASE</button></div>
+                                <div class="swiper-slide"><button>Capitalized Case</button></div>
+                                <div class="swiper-slide"><button>aLtErNaTiNg cAsE</button></div>
+                                <div class="swiper-slide"><button>Title Case</button></div>
+                                <div class="swiper-slide"><button>InVeRsE CaSe</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="controls-menu">
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-    
+
 
     <div id="footer-wrap">
 
@@ -60,5 +101,11 @@
 
         </footer>
     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
