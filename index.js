@@ -36,3 +36,13 @@ function upperBtnClick() {
   inputBox.value = upperCase;
 }
 
+function capitalBtnClick() {
+  let inputValue = inputBox.value;
+
+  function capitalizeWords() {
+    return inputValue.split(" ").map(word => word[0].toUpperCase() + word.slice(1)).join(" ");
+  }
+
+  inputBox.value = capitalizeWords();
+}
+
