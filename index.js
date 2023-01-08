@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 5,
   freeMode: true,
@@ -45,4 +45,28 @@ function capitalBtnClick() {
 
   inputBox.value = capitalizeWords();
 }
+
+
+
+function inverseBtnClick() {
+  let inputValue = inputBox.value;
+
+  function inverseCase() {
+    let inverseSentence = ''; 
+    
+    for (let i = 0; i < inputValue.length; i++) {
+      let letter = inputValue[i];
+      if (letter == letter.toUpperCase()) {
+        inverseSentence += letter.toLowerCase();
+      } else if (letter == letter.toLowerCase()) {
+        inverseSentence += letter.toUpperCase();
+      }
+    }
+    
+    return inverseSentence;
+  }
+  inputBox.value = inverseCase();
+}
+
+
 
