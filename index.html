@@ -60,11 +60,11 @@
                     <div class="row ">
                         <div class="col-9 editor-box">
                             <div class="text-area">
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <textarea name="" id="" cols="30" rows="10" id="inputBox"></textarea>
                             </div>
                         </div>
                         <div class="col-3">
-                            <div class="tools-box"></div>
+                            <div class="tools-box"></div>   
                         </div>
                     </div>
                 </div>
@@ -75,10 +75,10 @@
                         <!-- Swiper -->
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><button>Sentence case</button></div>
-                                <div class="swiper-slide"><button>lower case</button></div>
-                                <div class="swiper-slide"><button>UPPER CASE</button></div>
-                                <div class="swiper-slide"><button>Capitalized Case</button></div>
+                                <div class="swiper-slide"><button onclick="sentenceBtnClick()">Sentence case</button></div>
+                                <div class="swiper-slide"><button onclick="lowerBtnClick() ">lower case</button></div>
+                                <div class="swiper-slide"><button onclick="upperBtnClick()">UPPER CASE</button></div>
+                                <div class="swiper-slide"><button onclick="capitalBtnClick()">Capitalized Case</button></div>
                                 <div class="swiper-slide"><button>aLtErNaTiNg cAsE</button></div>
                                 <div class="swiper-slide"><button>Title Case</button></div>
                                 <div class="swiper-slide"><button>InVeRsE CaSe</button></div>
@@ -87,6 +87,7 @@
                     </div>
                 </div>
                 <div class="col-3">
+
                     <div class="controls-menu">
                     </div>
                 </div>
