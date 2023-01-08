@@ -61,7 +61,7 @@
                     <div class="row ">
                         <div class="col-9 editor-box">
                             <div class="text-area">
-                                <textarea name="" id="" cols="30" rows="10" id="inputBox"></textarea>
+                                <textarea name="" id="textarea" cols="30" rows="10" id="inputBox"></textarea>
                             </div>
                         </div>
                         <div class="col-3">
@@ -80,7 +80,7 @@
                                 <div class="swiper-slide"><button onclick="lowerBtnClick() ">lower case</button></div>
                                 <div class="swiper-slide"><button onclick="upperBtnClick()">UPPER CASE</button></div>
                                 <div class="swiper-slide"><button onclick="capitalBtnClick()">Capitalized Case</button></div>
-                                <div class="swiper-slide"><button>aLtErNaTiNg cAsE</button></div>
+                                <div class="swiper-slide"><button onclick="alternateCase()">aLtErNaTiNg cAsE</button></div>
                                 <div class="swiper-slide"><button>Title Case</button></div>
                                 <div class="swiper-slide"><button onclick="inverseBtnClick()">InVeRsE CaSe</button></div>
                             </div>
@@ -96,6 +96,7 @@
                 </div>
             </div>
         </div>
+        <div id="toast" class="toast">Copied to clipboard</div>
     </div>
 
 

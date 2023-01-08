@@ -29,11 +29,12 @@ header {
     font-size: 22px;
     font-weight: 700;
 }
-.logo span{
+
+.logo span {
     display: inline-block;
     color: transparent;
     -webkit-background-clip: text;
-    background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
 }
 
 #page-wrap {
@@ -42,27 +43,32 @@ header {
     background-color: #212121;
 
 }
-.hero-texts{
+
+.hero-texts {
     text-align: center;
-    padding-top:3% !important ;
+    padding-top: 3% !important;
 }
-.hero-texts h1{
+
+.hero-texts h1 {
     font-weight: 700;
     font-size: 52px;
     color: white;
 }
-.hero-texts h1 span{
+
+.hero-texts h1 span {
     display: inline-block;
     color: transparent;
     -webkit-background-clip: text;
-    background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
 }
-.hero-texts p{
+
+.hero-texts p {
     color: white;
     font-weight: 500;
     font-size: 18px;
     padding-top: .5% !important;
 }
+
 #page-wrap .editor-row {
     padding: 3% 15% 5% !important;
 
@@ -113,11 +119,13 @@ textarea:focus-visible {
     border-radius: 15px;
     padding: .5% !important;
 }
-.case-menu .swiper-slide{
+
+.case-menu .swiper-slide {
     height: 60px !important;
     width: auto !important;
     padding-right: 6px !important;
 }
+
 .case-menu button {
     background: #2F2F2F;
     border-radius: 10px;
@@ -126,10 +134,12 @@ textarea:focus-visible {
     padding: 0 25px !important;
     border: none;
 }
-.case-menu .swiper{
+
+.case-menu .swiper {
     border-radius: 10px;
 }
-.controls-menu{
+
+.controls-menu {
     width: 100%;
     height: 70px;
     background-color: #1c1c1e;
@@ -141,23 +151,48 @@ textarea:focus-visible {
     align-items: center;
     padding: 1.5% .1% !important;
 }
-.controls-menu button{
+
+.controls-menu button {
     width: 48%;
     background: #2F2F2F;
     border-radius: 10px;
     color: white;
     height: 100% !important;
     padding: 0 25px !important;
-    border: none;   
+    border: none;
 }
-.clear-btn{
-    margin-right:2px !important;
+
+.clear-btn {
+    margin-right: 2px !important;
     background-color: #e60b2f !important;
 }
-.copy-btn{
-    margin-left:2px !important;
+
+.copy-btn {
+    margin-left: 2px !important;
     background-color: #2151be !important;
 }
-.controls-menu button i{
-font-size: 24px;
+
+.controls-menu button i {
+    font-size: 24px;
+}
+
+
+
+.toast {
+    /* visibility: hidden; */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px;
+    background: linear-gradient(90deg, #2151be, #e60b2f) !important;
+    color: #fff;
+    padding: 10px 15px !important;
+    border-radius: 10px !important;
+    width: max-content !important;
+    font-weight: 500;
+    border: none !important;
+}
+
+.toast.show {
+    visibility: visible;
 }

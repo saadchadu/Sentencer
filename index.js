@@ -13,12 +13,17 @@ let inputBox = document.querySelector("textarea");
 function sentenceBtnClick() {
   let inputValue = inputBox.value;
 
-  function capitalizeFirstLetter() {
-    return inputValue[0].toUpperCase() + inputValue.slice(1);
-  }
+  function makeSentenceCase(sentence) {
+    var lowercase = sentence.toLowerCase();
 
-  let sentence = inputValue;
-  inputBox.value = capitalizeFirstLetter();
+    var capitalized = lowercase[0].toUpperCase() + lowercase.slice(1);
+  
+    return capitalized;
+  }
+  var sentence = inputValue;
+var modifiedSentence = makeSentenceCase(sentence);
+inputBox.value = modifiedSentence; 
+
 }
 
 function lowerBtnClick() {
@@ -33,18 +38,47 @@ function upperBtnClick() {
   inputBox.value = upperCase;
 }
 
+
 function capitalBtnClick() {
   let inputValue = inputBox.value;
 
-  function capitalizeWords() {
-    return inputValue
-      .split(" ")
-      .map((word) => word[0].toUpperCase() + word.slice(1))
-      .join(" ");
-  }
+  // function capitalizeWords() {
+  //   return inputValue
+  //     .split(" ")
+  //     .map((word) => word[0].toUpperCase() + word.slice(1))
+  //     .join(" ");
+  // }
 
-  inputBox.value = capitalizeWords();
+  // inputBox.value = capitalizeWords();
+
+
+  
+  
+    
 }
+
+
+// function alternateCase(){
+//   let inputValue = inputBox.value;
+//   function makeEvenLettersUppercase() { 
+//     var result = "";
+  
+//     for (var i = 0; i < inputValue.length; i++) {
+//       if (i % 2 === 0) {
+//         result += inputValue[i].toUpperCase();
+//       } else {
+//         result += inputValue[i];
+//       }
+//     }
+//     return result;
+//   }
+//   var modifiedSentence = makeEvenLettersUppercase(inputValue);
+//   inputBox.value = modifiedSentence;
+  
+  
+// }
+
+
 
 function inverseBtnClick() {
   let inputValue = inputBox.value;
@@ -66,6 +100,8 @@ function inverseBtnClick() {
   inputBox.value = inverseCase();
 }
 
+
+
 function clearData() {
   inputBox.value = "";
 }
@@ -79,3 +115,17 @@ function copyData() {
   document.execCommand("copy");
   document.body.removeChild(temp);
 }
+
+
+
+
+document.addEventListener('copy', function() {
+  // Show the toast notification
+  var toast = document.getElementById('toast');
+  toast.classList.add('show');
+
+  // Hide the toast notification after 3 seconds
+  setTimeout(function() {
+    toast.classList.remove('show');
+  }, 3000);
+});
