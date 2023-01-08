@@ -24,3 +24,9 @@ function sentenceBtnClick() {
 }
 
 
+function lowerBtnClick() {
+  let inputValue = inputBox.value;
+  let lowerCase = inputValue.toLowerCase();
+  inputBox.value = lowerCase;
+}
+
