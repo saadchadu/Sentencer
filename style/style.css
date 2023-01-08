@@ -136,4 +136,28 @@ textarea:focus-visible {
     border: 2px solid #454545;
     border-radius: 15px;
     padding: .5% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5% .1% !important;
+}
+.controls-menu button{
+    width: 48%;
+    background: #2F2F2F;
+    border-radius: 10px;
+    color: white;
+    height: 100% !important;
+    padding: 0 25px !important;
+    border: none;   
+}
+.clear-btn{
+    margin-right:2px !important;
+    background-color: #e60b2f !important;
+}
+.copy-btn{
+    margin-left:2px !important;
+    background-color: #2151be !important;
+}
+.controls-menu button i{
+font-size: 24px;
 }
