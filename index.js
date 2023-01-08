@@ -39,8 +39,8 @@ function upperBtnClick() {
 }
 
 
-function capitalBtnClick() {
-  let inputValue = inputBox.value;
+// function capitalBtnClick() {
+//   let inputValue = inputBox.value;
 
   // function capitalizeWords() {
   //   return inputValue
@@ -55,7 +55,7 @@ function capitalBtnClick() {
   
   
     
-}
+// }
 
 
 // function alternateCase(){
