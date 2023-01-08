@@ -30,3 +30,9 @@ function lowerBtnClick() {
   inputBox.value = lowerCase;
 }
 
+function upperBtnClick() {
+  let inputValue = inputBox.value;
+  let upperCase = inputValue.toUpperCase();
+  inputBox.value = upperCase;
+}
+
