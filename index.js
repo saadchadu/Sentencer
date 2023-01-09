@@ -39,23 +39,25 @@ function upperBtnClick() {
 }
 
 
-// function capitalBtnClick() {
-//   let inputValue = inputBox.value;
+function capitalBtnClick() {
+  sentenceBtnClick()
+  
+  let inputValue = inputBox.value;
 
-  // function capitalizeWords() {
-  //   return inputValue
-  //     .split(" ")
-  //     .map((word) => word[0].toUpperCase() + word.slice(1))
-  //     .join(" ");
-  // }
+  function capitalizeWords() {
+    return inputValue
+      .split(" ")
+      .map((word) => word[0].toUpperCase() + word.slice(1))
+      .join(" ");
+  }
 
-  // inputBox.value = capitalizeWords();
+  inputBox.value = capitalizeWords();
 
 
   
   
     
-// }
+}
 
 
 // function alternateCase(){
