@@ -60,25 +60,36 @@ function capitalBtnClick() {
 }
 
 
-// function alternateCase(){
-//   let inputValue = inputBox.value;
-//   function makeEvenLettersUppercase() { 
-//     var result = "";
+function alternateCase(){
+  sentenceBtnClick()
+  let inputValue = inputBox.value;
+  function makeEvenLettersUppercase() { 
+    var result = "";
   
-//     for (var i = 0; i < inputValue.length; i++) {
-//       if (i % 2 === 0) {
-//         result += inputValue[i].toUpperCase();
-//       } else {
-//         result += inputValue[i];
-//       }
-//     }
-//     return result;
-//   }
-//   var modifiedSentence = makeEvenLettersUppercase(inputValue);
-//   inputBox.value = modifiedSentence;
+    for (var i = 0; i < inputValue.length; i++) {
+      if (i % 2 === 0) {
+        result += inputValue[i].toUpperCase();
+      } else {
+        result += inputValue[i];
+      }
+    }
+    return result;
+  }
+  var modifiedSentence = makeEvenLettersUppercase(inputValue);
+  inputBox.value = modifiedSentence;
   
   
-// }
+}
+
+function titleCase(){
+let inputValue = inputBox.value;
+
+
+
+
+
+}
+
 
 
 
