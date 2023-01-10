@@ -8,7 +8,14 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+
+
 let inputBox = document.querySelector("textarea");
+
+
+
+//Sentence Case
 
 function sentenceBtnClick() {
   let inputValue = inputBox.value;
@@ -26,11 +33,16 @@ inputBox.value = modifiedSentence;
 
 }
 
+//Lower Button
+
 function lowerBtnClick() {
   let inputValue = inputBox.value;
   let lowerCase = inputValue.toLowerCase();
   inputBox.value = lowerCase;
 }
+
+
+//Upper Button
 
 function upperBtnClick() {
   let inputValue = inputBox.value;
@@ -38,6 +50,9 @@ function upperBtnClick() {
   inputBox.value = upperCase;
 }
 
+
+
+//Capital 
 
 function capitalBtnClick() {
   sentenceBtnClick()
@@ -60,6 +75,9 @@ function capitalBtnClick() {
 }
 
 
+
+//Alternate Case
+
 function alternateCase(){
   sentenceBtnClick()
   let inputValue = inputBox.value;
@@ -81,6 +99,9 @@ function alternateCase(){
   
 }
 
+
+//Title Case
+
 function titleCase(){
 let inputValue = inputBox.value;
 
@@ -91,7 +112,7 @@ let inputValue = inputBox.value;
 }
 
 
-
+//Inverse
 
 function inverseBtnClick() {
   let inputValue = inputBox.value;
@@ -114,10 +135,15 @@ function inverseBtnClick() {
 }
 
 
+//Clear data
 
 function clearData() {
   inputBox.value = "";
+  characterCount.innerHTML= "0000";
 }
+
+
+//Copy Data
 
 function copyData() {
   let inputValue = inputBox.value;
@@ -130,7 +156,7 @@ function copyData() {
 }
 
 
-
+//Copy Button Toast
 
 document.addEventListener('copy', function() {
   // Show the toast notification
@@ -141,4 +167,24 @@ document.addEventListener('copy', function() {
   setTimeout(function() {
     toast.classList.remove('show');
   }, 3000);
+});
+
+
+
+
+
+//Counter
+
+
+let characterCount = document.getElementById("characterCount");
+
+
+inputBox.addEventListener('input', function (e) {
+
+  // Count the current number of characters
+  let currentLength = inputBox.value.length;
+
+  characterCount.innerHTML=currentLength;
+
+
 });
