@@ -140,6 +140,7 @@ function inverseBtnClick() {
 function clearData() {
   inputBox.value = "";
   characterCount.innerHTML= "0000";
+  wordCount.innerHTML = "0000";
 }
 
 
@@ -175,6 +176,7 @@ document.addEventListener('copy', function() {
 
 //Counter
 
+//Character
 
 let characterCount = document.getElementById("characterCount");
 
@@ -188,3 +190,16 @@ inputBox.addEventListener('input', function (e) {
 
 
 });
+
+
+
+//Word Count
+
+let wordCount = document.getElementById("wordCount");
+inputBox.addEventListener("input", function() {
+  const words = inputBox.value.split(" ");
+  wordCount.innerHTML = words.length;
+});
+
+
+//Line Count
