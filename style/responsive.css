@@ -1,0 +1,71 @@
+
+@media only screen and (max-width: 480px){
+    .logo{
+        text-align: center !important;
+    }
+    header{
+        display: flex !important;
+        align-items: center !important;
+    }
+    .hero-texts{
+    padding: 6% 5% 2% !important;
+    }
+    .hero-texts h1{
+        font-size: 30px;
+    }
+    .hero-texts p{
+        font-size: 16px;
+        padding-top: 1.5% !important;
+        line-height: 1.4em;;
+    }
+    #page-wrap .editor-row{
+        padding: 3% 4% 5% !important;
+    }
+    .editor-box-row{
+        display: flex;
+    flex-direction: column-reverse;
+    }
+    .counter-box{
+        flex-direction: row;
+        height: 100px;
+        padding: 2% !important;
+        align-items: center;
+    }
+    .counter-box h3{
+        font-size: 26px;
+
+    }
+    .counter-box h5{
+        font-size: 14px;
+    }
+    .counter-1,.counter-2,.counter-3{
+        display: flex;
+    flex-direction: column-reverse;
+    }
+    .text-area{
+        width: 100%;
+        margin: 3% 0 !important;
+    }
+    .case-controls-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .case-menu{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .case-menu .swiper-slide{
+        height: 50px !important;
+        padding-right: 3px !important;
+    }
+    .case-menu button{
+        padding: 0 20px !important;
+        font-size: 14px;
+    }
+    .toast{
+        bottom: 24% !important  ;
+    }
+    
+}

@@ -141,6 +141,7 @@ function clearData() {
   inputBox.value = "";
   characterCount.innerHTML= "0000";
   wordCount.innerHTML = "0000";
+  lineCount.innerHTML = "0000";
 }
 
 
@@ -196,10 +197,26 @@ inputBox.addEventListener('input', function (e) {
 //Word Count
 
 let wordCount = document.getElementById("wordCount");
-inputBox.addEventListener("input", function() {
-  const words = inputBox.value.split(" ");
-  wordCount.innerHTML = words.length;
-});
+// inputBox.addEventListener("input", function() {
+//   const words = inputBox.value.split(" ");
+//   wordCount.innerHTML = words.length;
+  
+  
+// });
+
+
+let inputValue = inputBox.value;
+
+
+
+
 
 
 //Line Count
+
+let lineCount = document.getElementById("lineCount");
+
+inputBox.addEventListener("keyup", function() {
+  let lines = inputBox.value.split("\n").length;
+  lineCount.innerHTML = lines;
+});

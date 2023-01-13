@@ -142,6 +142,7 @@ textarea:focus-visible {
 
 .case-menu button {
     background: #2F2F2F;
+    font-size: 16px;
     border-radius: 10px;
     color: white;
     height: 100% !important;
@@ -209,4 +210,13 @@ textarea:focus-visible {
 
 .toast.show {
     visibility: visible;
+}
+@media only screen and (max-width: 600px){
+    .logo{
+        text-align: center !important;
+    }
+    header{
+        display: flex !important;
+        align-items: center !important;
+    }
 }
