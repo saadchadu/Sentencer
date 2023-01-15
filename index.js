@@ -199,18 +199,19 @@ inputBox.addEventListener('input', function (e) {
 //Word Count
 
 let wordCount = document.getElementById("wordCount");
-// inputBox.addEventListener("input", function() {
-//   const words = inputBox.value.split(" ");
-//   wordCount.innerHTML = words.length;
-  
-  
-// });
+  inputBox.addEventListener("input", function() {
+    var newText = inputBox.value.replace(/\n/g, "\n ");
+    const words = newText.split(" ");
+    wordCount.innerHTML = words.length;
+    console.log(words);
+    
+  });
 
 
 let inputValue = inputBox.value;
 
 
-
+  
 
 
 
@@ -222,3 +223,4 @@ inputBox.addEventListener("keyup", function() {
   let lines = inputBox.value.split("\n").length;
   lineCount.innerHTML = lines;
 });
+
