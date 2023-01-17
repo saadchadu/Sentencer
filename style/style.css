@@ -93,6 +93,21 @@ textarea {
     padding: 2% !important;
     color: white;
 }
+textarea::-webkit-scrollbar {
+    width: 15px;
+    
+}
+textarea::-webkit-scrollbar-track {
+    border-radius: 6px;
+            background-color: #2F2F2F;
+            border: 1px solid #454545;
+            padding: 2px !important;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-image: linear-gradient(180deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
+}
 
 textarea:focus-visible {
     /* border: 2px solid #e2ea00 !important; */
