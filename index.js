@@ -104,14 +104,10 @@ function alternateCase(){
 
 //Title Case
 
-function titleCase(){
-let inputValue = inputBox.value;
+// function titleCase(){
+// let inputValue = inputBox.value;
 
-
-
-
-
-}
+// }
 
 
 //Inverse
@@ -224,3 +220,38 @@ inputBox.addEventListener("keyup", function() {
   lineCount.innerHTML = lines;
 });
 
+
+
+
+// const loremIpsum = " ";
+
+// function generateLoremIpsum() {
+//     let numWords = prompt("Enter the number of words for your Lorem Ipsum:");
+//     let words = loremIpsum.split(" ");
+//     let generatedText = "";
+//     for (let i = 0; i < numWords; i++) {
+//         generatedText += words[i] + " ";
+//     }
+//     inputBox.innerHTML = generatedText;
+// }
+
+
+// Create a function to generate lorem ipsum
+function generateLoremIpsum(numWords) {
+  // Fetch data from the Lorem Ipsum API
+  fetch(`http://loripsum.net/api/${numWords}`)
+    .then(response => response.text())
+    .then(data => {
+      // Display the generated Lorem Ipsum
+      console.log(data);
+    })
+    .catch(error => console.error(error));
+}
+
+
+let numWords = prompt("Enter the number of words you want in your Lorem Ipsum:");
+if(isNaN(numWords)){
+  console.log("Please enter a number.");
+}else{
+  generateLoremIpsum(numWords);
+}
