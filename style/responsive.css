@@ -67,5 +67,28 @@
     .toast{
         bottom: 24% !important  ;
     }
-    
+    .text-row{
+        padding: 12% 5% !important;
+    }
+    .text-row h3{
+    font-size: 34px !important;
+    line-height: 1.3em !important;
+    padding: 0 5% !important;
+    }
+    .text-row h5{
+        font-size: 16px !important;
+        padding-top: 2% !important;
+        padding-bottom: 5% !important;
+    }
+    .feature-box{
+
+        padding-bottom: 6% !important;
+        padding-right: 0!important;
+    }
+    .feature-box h2{
+        font-size: 20px!important;
+    }
+    .feature-box p{
+        font-size: 16px!important;
+    }
 }

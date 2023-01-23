@@ -230,6 +230,7 @@ textarea:focus-visible {
 .toast.show {
     visibility: visible;
 }
+
 @media only screen and (max-width: 600px){
     .logo{
         text-align: center !important;
@@ -265,7 +266,8 @@ textarea:focus-visible {
     padding: 5% 0 0 0 !important;
 }
 .feature-box{
-    border-radius: 10px;
+    padding-bottom: 10% !important;
+    padding-right: 20% !important;
 }
 .feature-col{
     border-radius: 10px;
@@ -290,3 +292,4 @@ font-weight: 500;
 line-height: 1.4em;
 padding-top: 2% !important;
 }
+

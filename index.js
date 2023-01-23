@@ -8,6 +8,8 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+
 let inputBox = document.querySelector("textarea");
 
 //Sentence Case
@@ -219,41 +221,4 @@ function generateLoremIpsum() {
 
 
 
-
-
-
-
-
-
-// Get the rephrase button
-const rephraseBtn = document.getElementById("rephrase-btn");
-
-// Add an event listener to the rephrase button
-rephraseBtn.addEventListener("click", function() {
-  // Get the text from the textarea
-  const text = inputBox.value;
-
-  // Use the fetch function to call the API
-  fetch("https://cors-anywhere.herokuapp.com/https://languagetool.org/api/v2/check", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      text: text,
-      language: "en-US"
-    })
-  })
-    .then(response => response.json())
-    .then(data => {
-      // Get the first suggested replacement from the API
-      const rephrasedText = data.matches[0].replacements[0].value;
-
-      // Replace the text in the textarea with the rephrased text
-      textarea.value = rephrasedText;
-    })
-    .catch(err => {
-      console.log(err);
-    });
-});
 
