@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1>Text Casing <span>Reinforced</span></h1>
-                    <p>Enter your text and choose the case you want to convert your text    </p>
+                    <p>Enter your text and choose the case you want to convert your text </p>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
                                     <h5>Line Count</h5>
                                     <h3 id="lineCount">0000</h3>
                                 </div>
-                            </div>   
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,16 +90,23 @@
                         <!-- Swiper -->
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><button onclick="sentenceBtnClick()">Sentence case</button></div>
+                                <div class="swiper-slide"><button onclick="sentenceBtnClick()">Sentence case</button>
+                                </div>
                                 <div class="swiper-slide"><button onclick="lowerBtnClick() ">lower case</button></div>
                                 <div class="swiper-slide"><button onclick="upperBtnClick()">UPPER CASE</button></div>
-                                <div class="swiper-slide"><button onclick="capitalBtnClick()">Capitalized Case</button></div>
-                                <div class="swiper-slide"><button onclick="alternateCase()">aLtErNaTiNg cAsE</button></div>
+                                <div class="swiper-slide"><button onclick="capitalBtnClick()">Capitalized Case</button>
+                                </div>
+                                <div class="swiper-slide"><button onclick="alternateCase()">aLtErNaTiNg cAsE</button>
+                                </div>
                                 <!-- <div class="swiper-slide"><button onclick="titleCase()">Title Case</button></div> -->
-                                <div class="swiper-slide"><button onclick="inverseBtnClick()">InVeRsE CaSe</button></div>
-                                <div class="swiper-slide"><button onclick="generateLoremIpsum() ">Lorem Ipsum Genrator</button></div>
-                                <div class="swiper-slide"><button onclick="convertSpacesToHyphens()">Spaces > Hyphen</button></div>
-                                <div class="swiper-slide"><button onclick="convertHyphensToSpaces()">Hyphen > Spaces</button></div>
+                                <div class="swiper-slide"><button onclick="inverseBtnClick()">InVeRsE CaSe</button>
+                                </div>
+                                <div class="swiper-slide"><button onclick="generateLoremIpsum() ">Lorem Ipsum
+                                        Genrator</button></div>
+                                <div class="swiper-slide"><button onclick="convertSpacesToHyphens()">Spaces >
+                                        Hyphen</button></div>
+                                <div class="swiper-slide"><button onclick="convertHyphensToSpaces()">Hyphen >
+                                        Spaces</button></div>
                             </div>
                         </div>
                     </div>
@@ -112,67 +119,91 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="toast" class="toast">Copied to clipboard</div>
         <div class="container-fluid text-row">
             <div class="row ">
                 <h3>Welcome To Sentext Editor</h3>
-                <h5>Use our online case conversion tool to make your life a little simpler. Change the case of your text by formatting it as title case, lowercase to uppercase or merely sentence case to make it look cleaner. When you're finished, click the copy to clipboard button to quickly paste your freshly formatted text into a word document, email, or website CMS. With the case converter tool, changing the case is simple and will save you a lot of time.</h5>
+                <h5>Use our online case conversion tool to make your life a little simpler. Change the case of your text
+                    by formatting it as title case, lowercase to uppercase or merely sentence case to make it look
+                    cleaner. When you're finished, click the copy to clipboard button to quickly paste your freshly
+                    formatted text into a word document, email, or website CMS. With the case converter tool, changing
+                    the case is simple and will save you a lot of time.</h5>
             </div>
-            <div class="row feature-row">
-                <div class="col-4 feature-col">
+            <div class="row feature-row1 ">
+                <div class="col-4 pe-5">
+                    <div class="feature-box ">
+                        <h2>Sentence Case</h2>
+                        <p>Normalise your sentences using the sentence case button. fix your text formatting.</p>
+                    </div>
+                </div>
+                <div class="col-4 pe-5">
+                    <div class="feature-box ">
+                        <h2>Lower Case</h2>
+                        <p>Convert all of your text small letters using the lowercase button.</p>
+                    </div>
+                </div>
+                <div class="col-4 pe-5">
                     <div class="feature-box">
                         <h2>Upper Case</h2>
                         <p>Convert all of your text to capital letters using the uppercase button.</p>
+                        
                     </div>
                 </div>
-                <div class="col-4 feature-col">
-                    <div class="feature-box">
-                        <h2>Lower Case</h2>
-                        <p>Convert all of your text small letters using the lowercase button.</p>
+                <div class="col-4 pe-5 pt-5">
+                    <div class="feature-box ">
+                        <h2>Capitalized Case</h2>
+                        <p>Capitalise the first letter of every word using the title case button. Ideal for headings and
+                            titles.</p>
                     </div>
                 </div>
-                <div class="col-4 feature-col">
-                    <div class="feature-box">
-                        <h2>Title Case</h2>
-                        <p>Capitalise the first letter of every word using the title case button. Ideal for headings and titles.</p>
+                <div class="col-4 pe-5 pt-5">
+                    <div class="feature-box ">
+                        <h2>Alternative Case</h2>
+                        <p>Capital letters are randomly placed throughout the word(s), now used to convey mockery through text messages.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row feature-row">
-                <div class="col-4 feature-col">
+                <div class="col-4 pe-5 pt-5">
                     <div class="feature-box">
-                        <h2>Sentence Case</h2>
-                        <p>Normalise your sentences using the sentence case button. Fix your text formatting.</p>
+                        <h2>Inverse Case</h2>
+                        <p>Changing the case of the word just opposite to uppercase or to lowercase</p>
                     </div>
                 </div>
-                <div class="col-4 feature-col">
+                <div class="col-4 pe-5 pt-5">
                     <div class="feature-box">
-                        <h2>Lower Case</h2>
-                        <p>Convert all of your text small letters using the lowercase button.</p>
+                        <h2>Lorem Ipsum Generator</h2>
+                        <p>The Lorem Ipsum generator generates the desired number of Lorem Ipsum demo text</p>
                     </div>
                 </div>
-                <div class="col-4 feature-col">
+                <div class="col-4 pe-5 pt-5">
                     <div class="feature-box">
-                        <h2>Title Case</h2>
-                        <p>Capitalise the first letter of every word using the title case button. Ideal for headings and titles.</p>
+                        <h2>Spaces To Hyphen</h2>
+                        <p>Change all spaces in the sentence to hyphens using the Spaces > Hyphen Button</p>
+                    </div>
+                </div>
+                <div class="col-4 pe-5 pt-5">
+                    <div class="feature-box">
+                        <h2>Hyphen To Spaces</h2>
+                        <p>Change all hyphes in the sentence to Spaces using the Hyphen > Spaces Button</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <button id="rephrase-btn"">Tstee</button>
 
     <div id="footer-wrap">
 
         <footer>
-            
+
         </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/be1fab4251.js" crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>

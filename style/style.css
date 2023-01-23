@@ -261,17 +261,13 @@ textarea:focus-visible {
     line-height: 1.5em;
     text-align: center;
 }
-.feature-row{
+.feature-row1{
     padding: 5% 0 0 0 !important;
 }
 .feature-box{
-    padding: 4% !important;
-    background-color: #2f2f2f;
     border-radius: 10px;
 }
 .feature-col{
-    padding: 4% !important;
-    background-color: #2f2f2f;
     border-radius: 10px;
     min-height: 150px;
     display: flex;
