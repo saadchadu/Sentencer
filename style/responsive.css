@@ -9,7 +9,7 @@
         padding: 0px 5% !important
     }
     .hero-texts{
-    padding: 6% 5% 2% !important;
+        padding: 10% 5% 5% !important;
     }
     .hero-texts h1{
         font-size: 30px;
@@ -20,7 +20,7 @@
         line-height: 1.4em;;
     }
     #page-wrap .editor-row{
-        padding: 3% 4% 5% !important;
+        padding: 3% 4% 10% !important;
     }
     .editor-box-row{
         display: flex;
@@ -69,7 +69,7 @@
         bottom: 24% !important  ;
     }
     .text-row{
-        padding: 12% 5% !important;
+        padding: 10% 5% !important;
     }
     .text-row h3{
     font-size: 34px !important;
@@ -84,14 +84,19 @@
         text-align: left;
     }
     .feature-box{
-
-        padding-bottom: 12% !important;
-        padding-right: 0!important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* padding-bottom: 12% !important;
+        padding-right: 0!important; */
+        padding: 0 5% 12% 5% !important;
     }
     .feature-box h2{
-        font-size: 20px!important;
+        font-size: 22px!important;
     }
     .feature-box p{
-        font-size: 16px!important;
+        font-size: 18px!important;
+        text-align: center;
     }
 }
