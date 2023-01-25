@@ -73,7 +73,7 @@
     }
     .text-row h3{
     font-size: 34px !important;
-    line-height: 1.3em !important;
+    line-height: 1.2em !important;
     text-align: left;
     padding-right: 15% !important;
     }
@@ -84,19 +84,14 @@
         text-align: left;
     }
     .feature-box{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        /* padding-bottom: 12% !important;
-        padding-right: 0!important; */
-        padding: 0 5% 12% 5% !important;
+        padding-bottom: 12% !important;
+        padding-right: 0!important;
+        
     }
     .feature-box h2{
         font-size: 22px!important;
     }
     .feature-box p{
         font-size: 18px!important;
-        text-align: center;
     }
 }
