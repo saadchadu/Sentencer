@@ -16,6 +16,7 @@ let inputBox = document.querySelector("textarea");
 
 function sentenceBtnClick() {
   let inputValue = inputBox.value;
+  
 
   function makeSentenceCase(sentence) {
     var lowercase = sentence.toLowerCase();
@@ -24,10 +25,15 @@ function sentenceBtnClick() {
 
     return capitalized;
   }
+  
   var sentence = inputValue;
   var modifiedSentence = makeSentenceCase(sentence);
   inputBox.value = modifiedSentence;
+  inputBox.value = inputBox.value.replace(/(?<=[\.\?\!])\s*([a-z])/g, (match, group) => group.toUpperCase());
+  inputBox.value = inputBox.value.replace(/([.!?])\s*(?=[a-zA-Z])/g, "$1 ");
 }
+
+
 
 //Lower Button
 

@@ -13,13 +13,15 @@ header {
     background-color: #2F2F2F;
     width: 100%;
     height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 #header {
-    padding: 1% 10% !important;
+    padding: 0 10% !important;
 }
 
-#header .row {
+#header-wrap{
     display: flex;
     align-items: center;
 }
@@ -36,7 +38,74 @@ header {
     -webkit-background-clip: text;
     background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
 }
+.menu-links{
+    display: flex;
+    justify-content: end;
+}
+.contact-btn{
+    padding: 8px 40px !important;
+    border-radius: 70px !important;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    /* background: linear-gradient(90deg, #055aa6 0%, #e6333f 100%); */
+    background-color: #1c1c1e;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+.contact-btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 70px !important;
+}
 
+.contact-btn:active {
+    color: #000
+}
+
+.contact-btn:active:after {
+    background: transparent;
+}
+
+.contact-btn:hover:before {
+    opacity: 1;
+}
+.contact-btn:hover{
+    color: white !important;
+}
+.contact-btn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 70px !important;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
 #page-wrap {
     height: auto;
     width: 100%;
@@ -232,15 +301,6 @@ textarea:focus-visible {
     visibility: visible;
 }
 
-@media only screen and (max-width: 600px){
-    .logo{
-        text-align: center !important;
-    }
-    header{
-        display: flex !important;
-        align-items: center !important;
-    }
-}
 .text-row{
     padding: 5% 10% !important;
     background-color: #1c1c1e;
@@ -267,7 +327,7 @@ textarea:focus-visible {
     padding: 6% 0 0 0 !important;
 }
 .feature-box{
-    padding-bottom: 10% !important;
+    padding-bottom: 20% !important;
     padding-right: 20% !important;
 }
 .feature-box img{
