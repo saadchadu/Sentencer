@@ -15,6 +15,9 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #header {
@@ -106,7 +109,7 @@ header {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-#page-wrap {
+.hero-sec {
     height: auto;
     width: 100%;
     background-color: #212121;
@@ -138,7 +141,7 @@ header {
     padding-top: .5% !important;
 }
 
-#page-wrap .editor-row {
+.hero-sec .editor-row {
     padding: 3% 15% 5% !important;
 
 }
@@ -358,3 +361,77 @@ line-height: 1.4em;
 padding-top: 2% !important;
 }
 
+.mail-sec{
+    padding: 5% 10% !important;
+    background-color: #212121;  
+}
+.mail-row{
+    padding: 5% 10%!important;
+    background-image: url(../assets/images/mail-box-bg.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #102445;
+    border-radius: 40px;
+}
+.mail-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mail-box h3{
+    font-size: 46px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 20% !important ;
+    text-align: center;
+}
+.mail-box h3 span{
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
+}
+.mail-box p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2% 0 !important ;
+    text-align: center;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+.form-box{
+    width: 50% !important;
+    position: relative;
+}
+.form-box input{
+    padding: 4% !important;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 100% !important;
+    height: 65px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-box input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(106, 106, 106);
+}
+.form-box button{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(115, 81, 228);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    height: 55px;
+    position: absolute;
+    right: 5px;
+    width: 30% !important;
+}

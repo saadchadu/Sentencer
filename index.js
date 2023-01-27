@@ -121,15 +121,17 @@ function inverseBtnClick() {
 
 //Spaces > Hyphen
 function convertSpacesToHyphens(){
-  var convertSpacesToHyphens =  inputBox.value.replace(/\s+/g, '-');
-  inputBox.innerHTML  = convertSpacesToHyphens;
+  // var convertSpacesToHyphens =  inputBox.value.replace(/\s+/g, '-');
+  // inputBox.innerHTML  = convertSpacesToHyphens;
+  alert("wertyuytr");
 }
 
 
 //Hyphen >> Space
 function convertHyphensToSpaces(){
-  var convertSpacesToHyphens =  inputBox.value.replace(/-/g, " ");
-  inputBox.innerHTML  = convertSpacesToHyphens;
+  // var convertSpacesToHyphens =  inputBox.value.replace(/-/g, " ");
+  // inputBox.innerHTML  = convertSpacesToHyphens;
+  alert("798456231");
 }
 
 
