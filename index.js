@@ -68,6 +68,8 @@ function capitalBtnClick() {
   inputBox.value = capitalizeWords();
 }
 
+
+
 //Alternate Case
 
 function alternateCase() {
@@ -89,12 +91,18 @@ function alternateCase() {
   inputBox.value = modifiedSentence;
 }
 
+
+
+
 //Title Case
 
 // function titleCase(){
 // let inputValue = inputBox.value;
 
 // }
+
+
+
 
 //Inverse
 
@@ -119,19 +127,21 @@ function inverseBtnClick() {
 }
 
 
-//Spaces > Hyphen
-function convertSpacesToHyphens(){
-  // var convertSpacesToHyphens =  inputBox.value.replace(/\s+/g, '-');
-  // inputBox.innerHTML  = convertSpacesToHyphens;
-  alert("wertyuytr");
+
+function convertSpacesToHyphens() {
+  // let sentence = inputBox.value;
+  let newSentence = inputBox.value.replace(/ /g, "-");
+  inputBox.value = newSentence;
 }
+
+
 
 
 //Hyphen >> Space
 function convertHyphensToSpaces(){
-  // var convertSpacesToHyphens =  inputBox.value.replace(/-/g, " ");
-  // inputBox.innerHTML  = convertSpacesToHyphens;
-  alert("798456231");
+  var convertSpacesToHyphens =  inputBox.value.replace(/-/g, " ");
+  inputBox.value  = convertSpacesToHyphens;
+
 }
 
 
@@ -190,7 +200,6 @@ inputBox.addEventListener("input", function () {
   var newText = inputBox.value.replace(/\n/g, "\n ");
   const words = newText.split(" ");
   wordCount.innerHTML = words.length;
-  console.log(words);
 });
 
 let inputValue = inputBox.value;
