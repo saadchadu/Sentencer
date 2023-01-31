@@ -252,7 +252,6 @@ textarea:focus-visible {
     background-color: #1c1c1e;
     border: 2px solid #454545;
     border-radius: 15px;
-    padding: .5% !important;
     display: flex;
     justify-content: center;
     align-items: center;
