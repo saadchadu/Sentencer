@@ -439,6 +439,10 @@ footer{
     padding: 2% 10% !important;
     background-color: #1c1c1e;
 }
+.footer-row{
+display: flex;
+align-items: center;
+}
 .cleffon-logo-div{
     display: flex;
     align-items: center;
@@ -457,4 +461,10 @@ color: white;
     color: white;
     font-size: 14px;
     text-align: right;
+}
+.swiper-desk{
+    display: block;
+}
+.swiper-mob{
+    display: none;
 }

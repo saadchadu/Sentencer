@@ -94,4 +94,40 @@
     .feature-box p{
         font-size: 18px!important;
     }
+    .mail-sec{
+        padding: 15% 5% !important;
+
+    }
+    .mail-box h3 {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 0% !important;
+    }
+    .mail-row{
+        padding:12% 6% !important;
+    }
+    .form-box{
+        width: 100% !important;
+    }
+    .mail-box p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        padding: 3% 0 6% !important
+    }
+    footer{
+        padding: 5% !important;
+    }
+    .cleffon-logo-div h4, .copyright h5{
+        font-size: 12px !important;
+    }
+    .cleffon-logo{
+        width: 60px !important;
+    }
+    .swiper-desk{
+        display: none;
+    }
+    .swiper-mob{
+        display: block;
+    }
 }

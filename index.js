@@ -7,6 +7,15 @@ let swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+let swiper1 = new Swiper(".mySwiperMob", {
+  slidesPerView: 2.45,
+  spaceBetween: 1,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
 

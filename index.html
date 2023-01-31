@@ -93,7 +93,7 @@
                 <div class="col-lg-9 col-xs-1">
                     <div class="case-menu">
                         <!-- Swiper -->
-                        <div class="swiper mySwiper">
+                        <div class="swiper mySwiper swiper-desk">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><button onclick="sentenceBtnClick()">Sentence case</button>
                                 </div>
@@ -113,7 +113,27 @@
                                 <div class="swiper-slide"><button onclick="convertHyphensToSpaces()">Hyphen >
                                         Spaces</button></div>
                             </div>
-                            
+                        </div>
+                        <div class="swiper mySwiperMob swiper-mob">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><button onclick="sentenceBtnClick()">Sentence case</button>
+                                </div>
+                                <div class="swiper-slide"><button onclick="lowerBtnClick() ">lower case</button></div>
+                                <div class="swiper-slide"><button onclick="upperBtnClick()">UPPER CASE</button></div>
+                                <div class="swiper-slide"><button onclick="capitalBtnClick()">Capitalized Case</button>
+                                </div>
+                                <div class="swiper-slide"><button onclick="alternateCase()">aLtErNaTiNg cAsE</button>
+                                </div>
+                                <!-- <div class="swiper-slide"><button onclick="titleCase()">Title Case</button></div> -->
+                                <div class="swiper-slide"><button onclick="inverseBtnClick()">InVeRsE CaSe</button>
+                                </div>
+                                <div class="swiper-slide"><button onclick="generateLoremIpsum() ">Lorem Ipsum
+                                        Genrator</button></div>
+                                <div class="swiper-slide"><button onclick="convertSpacesToHyphens()">Spaces >
+                                        Hyphen</button></div>
+                                <div class="swiper-slide"><button onclick="convertHyphensToSpaces()">Hyphen >
+                                        Spaces</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,7 +248,7 @@
 
         <footer>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row footer-row  ">
                     <div class="col-6 ">
                         <div class="cleffon-logo-div">
                             <h4 class="powered">Powered By </h4>
