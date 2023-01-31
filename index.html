@@ -32,9 +32,9 @@
 </head>
 
 <body>
-    <audio controls loop autoplay style="display: none;">
+    <!-- <audio controls loop autoplay style="display: none;">
         <source src="/assets/music/music.mp3" type="audio/mp3">
-    </audio>
+    </audio> -->
         <header>
             <div class="container-fluid" id="header">
                 <div class="row " id="header-wrap">
@@ -255,9 +255,9 @@
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycby-RPGfptKs4Nf2hpYkqKp8m30IVZcioZjPfsU0fggcXNPP7mpkiQx6UtZHeh7QbPDjrQ/exec",
                 data:$("#sub-form").serialize(),
-                method:"post",
+                method:"POST",
                 success:function (response){
-                    alert("Form submitted successfully")
+                    alert("Email Subscription Requested Succesfully")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
