@@ -212,7 +212,7 @@
                         <h3>Get Subscribed For <span>Firsthand</span> News From Us</h3>
                         <p>Join our newsletter list for occasional updates, products and insights.</p>
                         <div class="form-box">
-                            <form class="" action="https://script.google.com/macros/s/AKfycbxiuNQUhZlrK9gg_HbCP0AY-13pbFgCLVGc2KkQw8wBwPtwMxmE5papq0xeT5V_J8Bupw/exec" method="post">
+                            <form id="sub-form" class="" action="">
                                 <input name="Email" type="email" placeholder="Enter Your Email ID">
                                 <button><span>Send</span> </button>
                             </form>
@@ -234,6 +234,28 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/be1fab4251.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $("#sub-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycby-RPGfptKs4Nf2hpYkqKp8m30IVZcioZjPfsU0fggcXNPP7mpkiQx6UtZHeh7QbPDjrQ/exec",
+                data:$("#sub-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
 </body>
 
