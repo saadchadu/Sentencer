@@ -1,3 +1,69 @@
+@media only screen and (max-width: 786px){
+    .hero-texts h1{
+        font-size: 40px;
+    }
+    .hero-sec .editor-row{
+        padding: 3% 5% 5% !important;
+    }
+    .text-area{
+        width: 100%;
+    }
+    .counter-box{
+        height: 160px;
+        flex-direction: row;
+        padding: 3% !important;
+        align-items: center;
+        margin: 2% 0 !important;
+    }
+    .case-menu{
+        width: 100%;
+        margin-bottom: 2% !important;
+    }
+    .case-controls-row{
+        padding-top: 0 !important;
+        
+    }
+    .controls-menu{
+        padding: .5% 0 !important;
+    }
+    .controls-menu button{
+        width: 49% !important;
+    }
+    .text-row {
+        padding: 8% 5% !important;
+    }
+    .feature-box img{
+        width: 80px;
+    }
+    .feature-box {
+        padding-bottom: 6% !important;
+        padding-right: 0 !important;
+    }
+    .feature-row .col-sm-6:nth-child(odd){
+        padding-right: 3% !important;
+    }
+    .feature-row .col-sm-6:nth-child(even){
+        padding-left: 3% !important;
+    }
+    .mail-sec {
+        padding: 10% 5% !important;
+    }
+    .mail-row {
+        padding: 5% !important;
+    }
+    .mail-box h3 {
+        font-size: 36px;
+    padding: 0 5% !important;
+    }
+    .mail-box p{
+        padding: 3% 0 !important;
+    }
+    .form-box {
+        width: 70% !important;
+    }
+
+}
+
 
 @media only screen and (max-width: 480px){
     
@@ -6,7 +72,7 @@
         
     }
     #header{
-        padding: 0px 5% !important
+        padding: 0 5% !important
     }
     .hero-texts{
         padding: 10% 5% 5% !important;
@@ -87,6 +153,9 @@
         padding-bottom: 12% !important;
         padding-right: 0!important;
         
+    }
+    .feature-box img {
+        width: 60px;
     }
     .feature-box h2{
         font-size: 22px!important;
