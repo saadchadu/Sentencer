@@ -61,6 +61,12 @@
     .form-box {
         width: 70% !important;
     }
+    .swiper-desk{
+        display: none;
+    }
+    .swiper-mob{
+        display: block;
+    }
 
 }
 

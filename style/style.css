@@ -465,5 +465,5 @@ color: white;
     display: block;
 }
 .swiper-mob{
-    display: none;
+    display: none !important;
 }
