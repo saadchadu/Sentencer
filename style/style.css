@@ -30,9 +30,12 @@ header {
 }
 
 .logo {
-    color: white;
+    /* color: white;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 700; */
+    width: 130px;
+        display: flex;
+    align-items: center;
 }
 
 .logo span {
