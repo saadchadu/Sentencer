@@ -24,7 +24,7 @@
     <!---Gilroy Font End--->
 
     <!---Swiper Js Start--->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <!---Swiper Js End--->
 
@@ -35,117 +35,95 @@
     <!-- <audio controls loop autoplay style="display: none;">
         <source src="/assets/music/music.mp3" type="audio/mp3">
     </audio> -->
-        <header>
-            <div class="container-fluid" id="header">
-                <div class="row " id="header-wrap">
-                    <div class="col-lg-6 col-6 logo-wrap">
-                        <h1 class="logo"><img src="assets/images/Sentencer-Logo.svg" alt="" srcset=""></span></h1>
-                    </div>
-                    <div class="col-lg-6 col-6 menu-wrap">
-                        <div class="menu-links">
-                            <a href="mailto:cleffongraphics@gmail.com" class="glow-on-hover contact-btn">Contact</a>
-                        </div>
+    <header>
+        <div class="container-fluid" id="header">
+            <div class="row " id="header-wrap">
+                <div class="col-lg-6 col-6 logo-wrap">
+                    <h1 class="logo"><img src="assets/images/Sentencer-Logo.svg" alt="" srcset=""></span></h1>
+                </div>
+                <div class="col-lg-6 col-6 menu-wrap">
+                    <div class="menu-links">
+                        <a href="mailto:cleffongraphics@gmail.com" class="glow-on-hover contact-btn">Contact</a>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
 
     <div id="page-wrap">
         <div class="hero-sec">
-        <div class="container-fluid hero-texts">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Text Casing <span>Reinforced</span></h1>
-                    <p>Enter your text and choose the case you want to convert your text </p>
+            <div class="container-fluid hero-texts">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Text Casing <span>Reinforced</span></h1>
+                        <p>Enter your text and choose the case you want to convert your text </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid editor-row">
-            <div class="row">
-                <div class="col-12">
-                    <div class="row editor-box-row">
-                        <div class="col-lg-9 col-xs-12 editor-box">
-                            <div class="text-area">
-                                <textarea name="" id="textarea" cols="30" rows="10" id="inputBox"></textarea>
+            <div class="container-fluid editor-row">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row editor-box-row">
+                            <div class="col-lg-9 col-xs-12 editor-box">
+                                <div class="text-area">
+                                    <textarea name="" id="textarea" cols="30" rows="10" id="inputBox"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-xs-12">
-                            <div class="counter-box">
-                                <div class="counter-1">
-                                    <h5>Character Count</h5>
-                                    <h3 id="characterCount">0000</h3>
-                                </div>
-                                <div class="counter-2">
-                                    <h5>Word Count</h5>
-                                    <h3 id="wordCount">0000</h3>
-                                </div>
-                                <div class="counter-3">
-                                    <h5>Line Count</h5>
-                                    <h3 id="lineCount">0000</h3>
+                            <div class="col-lg-3 col-xs-12">
+                                <div class="counter-box">
+                                    <div class="counter-1">
+                                        <h5>Character Count</h5>
+                                        <h3 id="characterCount">0000</h3>
+                                    </div>
+                                    <div class="counter-2">
+                                        <h5>Word Count</h5>
+                                        <h3 id="wordCount">0000</h3>
+                                    </div>
+                                    <div class="counter-3">
+                                        <h5>Line Count</h5>
+                                        <h3 id="lineCount">0000</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row case-controls-row">
-                <div class="col-lg-9 col-xs-1">
-                    <div class="case-menu">
-                        <!-- Swiper -->
-                        <div class="swiper mySwiper swiper-desk">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><button onclick="sentenceBtnClick()">Sentence case</button>
-                                </div>
-                                <div class="swiper-slide"><button onclick="lowerBtnClick() ">lower case</button></div>
-                                <div class="swiper-slide"><button onclick="upperBtnClick()">UPPER CASE</button></div>
-                                <div class="swiper-slide"><button onclick="capitalBtnClick()">Capitalized Case</button>
-                                </div>
-                                <div class="swiper-slide"><button onclick="alternateCase()">aLtErNaTiNg cAsE</button>
-                                </div>
-                                <!-- <div class="swiper-slide"><button onclick="titleCase()">Title Case</button></div> -->
-                                <div class="swiper-slide"><button onclick="inverseBtnClick()">InVeRsE CaSe</button>
-                                </div>
-                                <div class="swiper-slide"><button onclick="generateLoremIpsum() ">Lorem Ipsum
+                <div class="row case-controls-row">
+                    <div class="col-lg-9 col-xs-1">
+                        <div class="case-menu">
+
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><button onclick="sentenceBtnClick()">Sentence
+                                            case</button></div>
+                                    <div class="swiper-slide"><button onclick="lowerBtnClick() ">lower case</button></div>
+                                    <div class="swiper-slide"><button onclick="upperBtnClick()">UPPER CASE</button></div>
+                                    <div class="swiper-slide"><button onclick="capitalBtnClick()">Capitalized
+                                        Case</button></div>
+                                    <div class="swiper-slide"><button onclick="alternateCase()">aLtErNaTiNg
+                                        cAsE</button></div>
+                                    <div class="swiper-slide"><button onclick="inverseBtnClick()">InVeRsE CaSe</button></div>
+                                    <div class="swiper-slide"><button onclick="generateLoremIpsum() ">Lorem Ipsum
                                         Genrator</button></div>
-                                <div class="swiper-slide"><button onclick="convertSpacesToHyphens()">Spaces >
+                                    <div class="swiper-slide"><button onclick="convertSpacesToHyphens()">Spaces >
                                         Hyphen</button></div>
-                                <div class="swiper-slide"><button onclick="convertHyphensToSpaces()">Hyphen >
+                                    <div class="swiper-slide"><button onclick="convertHyphensToSpaces()">Hyphen >
                                         Spaces</button></div>
-                            </div>
-                        </div>
-                        <div class="swiper mySwiperMob swiper-mob">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><button onclick="sentenceBtnClick()">Sentence case</button>
                                 </div>
-                                <div class="swiper-slide"><button onclick="lowerBtnClick() ">lower case</button></div>
-                                <div class="swiper-slide"><button onclick="upperBtnClick()">UPPER CASE</button></div>
-                                <div class="swiper-slide"><button onclick="capitalBtnClick()">Capitalized Case</button>
-                                </div>
-                                <div class="swiper-slide"><button onclick="alternateCase()">aLtErNaTiNg cAsE</button>
-                                </div>
-                                <!-- <div class="swiper-slide"><button onclick="titleCase()">Title Case</button></div> -->
-                                <div class="swiper-slide"><button onclick="inverseBtnClick()">InVeRsE CaSe</button>
-                                </div>
-                                <div class="swiper-slide"><button onclick="generateLoremIpsum() ">Lorem Ipsum
-                                        Genrator</button></div>
-                                <div class="swiper-slide"><button onclick="convertSpacesToHyphens()">Spaces >
-                                        Hyphen</button></div>
-                                <div class="swiper-slide"><button onclick="convertHyphensToSpaces()">Hyphen >
-                                        Spaces</button></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-xs-1">
-                    <div class="controls-menu">
-                        <button class="clear-btn" onclick="clearData()"><i class="fa-solid fa-delete-left"></i></button>
-                        <button class="copy-btn" onclick="copyData()"><i class="fa-regular fa-copy"></i></button>
+                    <div class="col-lg-3 col-xs-1">
+                        <div class="controls-menu">
+                            <button class="clear-btn" onclick="clearData()"><i
+                                    class="fa-solid fa-delete-left"></i></button>
+                            <button class="copy-btn" onclick="copyData()"><i class="fa-regular fa-copy"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
         <div id="toast" class="toast">Copied to clipboard</div>
         <div class="container-fluid text-row">
@@ -177,7 +155,7 @@
                         <img src="assets/icons/uppercase.svg" alt="Uppercase">
                         <h2>Upper Case</h2>
                         <p>Convert all of your text to capital letters using the uppercase button.</p>
-                        
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -192,7 +170,8 @@
                     <div class="feature-box ">
                         <img src="assets/icons/Alternative-Case.svg" alt="Alternative Case">
                         <h2>Alternative Case</h2>
-                        <p>Capital letters are randomly placed throughout the word(s), now used to convey mockery through text messages.</p>
+                        <p>Capital letters are randomly placed throughout the word(s), now used to convey mockery
+                            through text messages.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -249,13 +228,18 @@
         <footer>
             <div class="container-fluid">
                 <div class="row footer-row  ">
-                    <div class="col-6 ">
+                    <div class="col-md-4 col-12">
                         <div class="cleffon-logo-div">
                             <h4 class="powered">Powered By </h4>
-                            <a href="www.cleffon.com"><img class="cleffon-logo" src="assets/images/Logo-white-text.svg" alt=""></a>
+                            <a href="www.cleffon.com"><img class="cleffon-logo" src="assets/images/Logo-white-text.svg"
+                                    alt=""></a>
                         </div>
                     </div>
-                    <div class="col-6  copyright">
+                    <div class="col-md-4 col-12" ">
+                        <a class=" buymeacoffee" href="https://www.buymeacoffee.com/cleffon"><img
+                            src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=cleffon&button_colour=d6004b&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+                    </div>
+                    <div class="col-md-4 col-12  copyright">
                         <h5>© 2023 Sentext Editor</h5>
                     </div>
                 </div>
@@ -263,27 +247,30 @@
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/be1fab4251.js" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
-        $("#sub-form").submit((e)=>{
+        $("#sub-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycby-RPGfptKs4Nf2hpYkqKp8m30IVZcioZjPfsU0fggcXNPP7mpkiQx6UtZHeh7QbPDjrQ/exec",
-                data:$("#sub-form").serialize(),
-                method:"POST",
-                success:function (response){
+                url: "https://script.google.com/macros/s/AKfycby-RPGfptKs4Nf2hpYkqKp8m30IVZcioZjPfsU0fggcXNPP7mpkiQx6UtZHeh7QbPDjrQ/exec",
+                data: $("#sub-form").serialize(),
+                method: "POST",
+                success: function (response) {
                     alert("Email Subscription Requested Succesfully")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
-                error:function (err){
+                error: function (err) {
                     alert("Something Error")
-    
+
                 }
             })
         })

@@ -1,20 +1,28 @@
-let swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4.48,
-  spaceBetween: 1,
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 0,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-});
-let swiper1 = new Swiper(".mySwiperMob", {
-  slidesPerView: 2.45,
-  spaceBetween: 1,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 5,
+      spaceBetween: 0
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 0
+    }
+  }
 });
 
 

@@ -61,12 +61,6 @@
     .form-box {
         width: 70% !important;
     }
-    .swiper-desk{
-        display: none;
-    }
-    .swiper-mob{
-        display: block;
-    }
 
 }
 
@@ -134,8 +128,9 @@
         padding-right: 3px !important;
     }
     .case-menu button{
-        padding: 0 20px !important;
+        padding: 0 0 !important;
         font-size: 14px;
+
     }
     .toast{
         bottom: 24% !important  ;
@@ -193,16 +188,17 @@
     footer{
         padding: 5% !important;
     }
+    .cleffon-logo-div{
+        justify-content: center;
+    }
     .cleffon-logo-div h4, .copyright h5{
-        font-size: 12px !important;
+        font-size: 14px !important;
+        text-align: center;
     }
     .cleffon-logo{
-        width: 60px !important;
+        width: 70px !important;
     }
-    .swiper-desk{
-        display: none;
-    }
-    .swiper-mob{
-        display: block;
+    .buymeacoffee{
+        padding: 4% 0 !important;
     }
 }
