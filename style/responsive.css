@@ -122,15 +122,21 @@
         height: 60px;
         display: flex;
         align-items: center;
+        padding: 1% !important;
     }
     .case-menu .swiper-slide{
         height: 50px !important;
-        padding-right: 3px !important;
+        padding: 0 !important;
     }
     .case-menu button{
         padding: 0 0 !important;
         font-size: 14px;
-
+    }
+    .case-menu .swiper-slide{
+        margin: 0px 2px !important;
+    }
+    .case-menu .swiper-slide:nth-child(1) {
+        margin-left: 0px !important;
     }
     .toast{
         bottom: 24% !important  ;
