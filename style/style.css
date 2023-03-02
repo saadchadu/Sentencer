@@ -530,4 +530,8 @@ footer {
     font-size: 14px;
     text-align: right;
 }
+.powered a{
+    display: flex;
+    align-items: center;
+}
 

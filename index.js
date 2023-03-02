@@ -74,16 +74,20 @@ function capitalBtnClick() {
   sentenceBtnClick();
 
   let inputValue = inputBox.value;
+  const newSentence = inputValue.replace(/\n/g, ' ');
 
   function capitalizeWords() {
-    return inputValue
+    return newSentence
       .split(" ")
       .map((word) => word[0].toUpperCase() + word.slice(1))
       .join(" ");
   }
 
+
+  
   inputBox.value = capitalizeWords();
 }
+
 
 
 
